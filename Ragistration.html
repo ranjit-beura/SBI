@@ -1,1 +1,8 @@
-Register your self to contine use.
+#!/bin/bash
+sudo su -
+yum update -y
+yum install httpd -y
+yum install git -y
+service httpd start
+chkconfig httpd on
+git clone https://github.com/ranjit-beura/FoodApp.git /var/www/html
